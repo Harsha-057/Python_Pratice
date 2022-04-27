@@ -1,0 +1,766 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "questions.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO6LyjKpSQA7KKVIFVBdBUO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Harsha-057/Python_Pratice/blob/main/Assignment%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MvfWbSkqaYyN",
+        "outputId": "16fa11a9-0e5a-4531-8b26-e23ad789d9a1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter25\n",
+            "enter51\n",
+            "29\n",
+            "31\n",
+            "37\n",
+            "41\n",
+            "43\n",
+            "47\n"
+          ]
+        }
+      ],
+      "source": [
+        "#write a program to print prime number in a given range by using funtion range(25 to 50)\n",
+        "def prime(x):\n",
+        "  flag=False\n",
+        "  for i in range(2,x+1):\n",
+        "    if x%i==0:\n",
+        "      flag=True\n",
+        "      break\n",
+        "  if flag==False:\n",
+        "    print(x)\n",
+        "a=int(input(\"enter\"))\n",
+        "b=int(input(\"enter\"))\n",
+        "for i in range(a,b):\n",
+        "  prime(i)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to read any month in integer and display days for that month \n",
+        "a = int(input(\"enter\"))\n",
+        "if a == 1 or a == 3 or a == 5 or a == 7 or a == 8 or a == 10 or a == 12:\n",
+        "  print(\"31 Days\")\n",
+        "elif a == 4 or a == 6 or a == 9 or a == 11:\n",
+        "  print(\"30 Days\")\n",
+        "else:\n",
+        "  print(\"28 Days\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NriAkxKiantW",
+        "outputId": "2db046bf-2063-4df4-910f-9778751ff535"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter2\n",
+            "28 Days\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a python program to print even length words in a string \n",
+        "def even(s):\n",
+        "  s = s.split(\" \")\n",
+        "  for i in s:\n",
+        "    if len(i)%2==0:\n",
+        "      print(i)\n",
+        "s = input(\"Enter\")\n",
+        "even(s)"
+      ],
+      "metadata": {
+        "id": "K2cMp27ya2ED"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a python program to capatilize the first letter and last letter of each word\n",
+        "#write a program to read a string from user display first character of each word with capital letter\n",
+        "a = str(input(\"enter\"))\n",
+        "b = a.split()\n",
+        "s= ''\n",
+        "for i in b:\n",
+        "  x=i.capitalize()\n",
+        "  c=i[-1].capitalize()\n",
+        "  s=x[0:-1]+c\n",
+        "  print(s,end=\" \")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LB17M8nBbHU1",
+        "outputId": "e5022843-e649-4e74-c4be-007568498990"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enterhello wor;d\n",
+            "HellO Wor;D "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to read a string from user display first character of each word with capital letter\n",
+        "a = str(input(\"enter\"))\n",
+        "b= a.split(\" \")\n",
+        "for i in b:\n",
+        "  s = s.capitalize()\n",
+        "  print(s)"
+      ],
+      "metadata": {
+        "id": "H3cxgkryrQU6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a python program to convert to list of mulitple integers into single integer\n",
+        "a = eval(input(\"enter\"))\n",
+        "b=\"\"\n",
+        "for i in a:\n",
+        "  b=str(i)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "id": "uIGynsJUb2Dc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def prime(a,b):\n",
+        "  for i in range(a,b+1):\n",
+        "    k=0\n",
+        "    for j in range(2,i):\n",
+        "      if i%j==0:\n",
+        "        k+=1\n",
+        "      if k==0:\n",
+        "        print(i)\n",
+        "\n",
+        "l = int(input(\"enter\"))\n",
+        "m = int(input(\"enter\"))\n",
+        "prime(l,m)"
+      ],
+      "metadata": {
+        "id": "j3xkD85lclrV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a python program to find power of a number using recurison and without using recurison\n",
+        "import math\n",
+        "n = int(input(\"enter:\"))\n",
+        "p = int(input(\"enter:\"))\n",
+        "print(math.pow(n,p))\n"
+      ],
+      "metadata": {
+        "id": "ofI1yFzSJwdy",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "14addd2a-7292-43ac-85b7-760ecd0d0aae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter:5\n",
+            "enter:3\n",
+            "125.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to sort tuples by total digits \n",
+        "#list=[(3,4,6,723),(1,2),(134,234,34)]\n",
+        "l=[(3,4,6,729),(1,2),(134,234,34)]\n",
+        "l.sort()\n",
+        "print(l)"
+      ],
+      "metadata": {
+        "id": "MVZBKjsVKBFy",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a7cf8ec1-fd77-425c-d0fe-95c19195863f"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[(1, 2), (3, 4, 6, 729), (134, 234, 34)]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Take Five Subjects marks from user and display the grade of the student \n",
+        "#if avg 90-100 o 80-89 a+ 70-79 a 60-69 b+ 40-59 c 40-0 f\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=int(input())\n",
+        "d=int(input())\n",
+        "e=int(input())\n",
+        "avg = (a+b+c+d+e)/5\n",
+        "if a>=90:\n",
+        "    print(\"Sub a grade is A\")\n",
+        "elif a>=80:\n",
+        "    print(\"Sub a grade is B\")\n",
+        "elif a>=70:\n",
+        "    print(\"Sub a grade is C\")\n",
+        "else:\n",
+        "    print(\"Sub a grade is D\")\n",
+        "if b>=90:\n",
+        "    print(\"Sub b grade is A\")\n",
+        "elif b>=80:\n",
+        "    print(\"Sub b grade is B\")\n",
+        "elif b>=70:\n",
+        "    print(\"Sub b grade is C\")\n",
+        "else:\n",
+        "    print(\"Sub b grade is D\")\n",
+        "if c>=90:\n",
+        "    print(\"Sub c grade is A\")\n",
+        "elif c>=80:\n",
+        "    print(\"Sub c grade is B\")\n",
+        "elif c>=70:\n",
+        "    print(\"Sub c grade is C\")\n",
+        "else:\n",
+        "    print(\"Sub c grade is D\")\n",
+        "if d>=90:\n",
+        "    print(\"Sub d grade is A\")\n",
+        "elif d>=80:\n",
+        "    print(\"Sub d grade is B\")\n",
+        "elif d>=70:\n",
+        "    print(\"Sub d grade is C\")\n",
+        "else:\n",
+        "    print(\"Sub d grade is D\")\n",
+        "if e>=90:\n",
+        "    print(\"Sub e grade is A\")\n",
+        "elif e>=80:\n",
+        "    print(\"Sub e grade is B\")\n",
+        "elif e>=70:\n",
+        "    print(\"Sub e grade is C\")\n",
+        "else:\n",
+        "    print(\"Sub e grade is D\")\n",
+        "print(avg)\n",
+        "if avg>=90:\n",
+        "    print(\"Total grade O\")\n",
+        "elif avg>=80:\n",
+        "    print(\"Total grade A+\")\n",
+        "elif avg>=70:\n",
+        "    print(\"Total grade A\")\n",
+        "elif avg>=60:\n",
+        "  print(\"Total Grade B\")\n",
+        "elif avg>=50:\n",
+        "  print(\"Total Grade C\")\n",
+        "else:\n",
+        "    print(\"Total grade \")"
+      ],
+      "metadata": {
+        "id": "Tom755u6KNmI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4fcbf38e-a391-4f8a-8cb3-a2b2a2239b8a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "90\n",
+            "90\n",
+            "90\n",
+            "90\n",
+            "90\n",
+            "Sub a grade is A\n",
+            "Sub b grade is A\n",
+            "Sub c grade is A\n",
+            "Sub d grade is A\n",
+            "Sub e grade is A\n",
+            "90.0\n",
+            "Total grade O\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# write a python program that prints 1 if all the three given number are in asecnding order \n",
+        "a=list(map(int, input(\"Enter number \").rstrip().split()))\n",
+        "b=[]\n",
+        "b.extend(a)\n",
+        "a.sort()\n",
+        "if a==b :\n",
+        "  print(1)\n",
+        "else :\n",
+        "  print(0)\n"
+      ],
+      "metadata": {
+        "id": "KOnePxjWLDlM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ae5fdee3-d708-46d4-daf2-071c64da8689"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number 1234\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#check the gien number is perfect or not\n",
+        "n=int(input(\"enter a number: \"))\n",
+        "s=0\n",
+        "for i in range(1,(n//2+1)):\n",
+        "  if n%i == 0:\n",
+        "    s+=i\n",
+        "  if(s == n):\n",
+        "    print(\"perfect number\")\n",
+        "  else:\n",
+        "    print(\"not a perfect number\")"
+      ],
+      "metadata": {
+        "id": "UyK6x4cPLnSl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "sWMTfB_qYTz5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#check given string is palindrome or not\n",
+        "a=input(\"enter a word \")\n",
+        "b=a[::-1]\n",
+        "if a==b:\n",
+        "  print(\"plaindrome\")\n",
+        "else :\n",
+        "  print(\"not a palindrome\")\n"
+      ],
+      "metadata": {
+        "id": "6bigDvqEL4uA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8ee02945-093e-4ad4-a39d-86ac7568ec59"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a word joj\n",
+            "plaindrome\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#find the gcd of two numbers with and without recursion\n",
+        "import math\n",
+        "a = int(input(\"enter\"))\n",
+        "b = int(input(\"enter\"))\n",
+        "print(math.gcd(a,b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AEdHUg5TMeNx",
+        "outputId": "cc9c1bf7-8369-4c35-da41-e21550b42332"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter5\n",
+            "enter3\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#print sum of even digits in a given number \n",
+        "a=int(input(\"Enter a number \"))\n",
+        "s=0\n",
+        "for i in range (a):\n",
+        "  r=a%10\n",
+        "  if r%2==0 :\n",
+        "    s+=r\n",
+        "  a=a//10\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "Nd2P4f03MuwT",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f973720c-8729-4dfa-a49d-8499bb5618ba"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number 123456\n",
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to calculate the sum of squares of digits of a number given by the user\n",
+        "a=int(input(\"Enter a number \"))\n",
+        "s=0\n",
+        "for i in range (a):\n",
+        "  r=a%10\n",
+        "  r=r*r\n",
+        "  s+=r\n",
+        "  a=a//10\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "--hXMluwM80w",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4a2372f9-5dae-4eb9-e1ce-cc3569af569d"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number 1234\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#given the string is s = abcefcba how many times the i character \n",
+        "#print(countFrontBackMatches())\n",
+        "a=input(\"Enter a word \")\n",
+        "s=0\n",
+        "l=len(a)//2\n",
+        "for i in range(l):\n",
+        "  x=a[i]\n",
+        "  y=a[-(i+1)]\n",
+        "  if x==y :\n",
+        "    s+=1\n",
+        "\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "1L5lqvnLNUng",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "768bffa3-f0f8-46ad-a0e3-556e022b36a7"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a word abcefcba\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#given an integer a list containing  1 22 333 4444 and finally n repated times \n",
+        "#print(repaeatNumtimes(4))\n",
+        "n=int(input(\"enter your number :\"))\n",
+        "a=[]\n",
+        "for i in range (n+1):\n",
+        "  for j in range (i):\n",
+        "    a.append(i)\n",
+        "\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "id": "fVf6tmHAOAel"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#print no of vowels and constants in a given string\n",
+        "#Gitam University\n",
+        "a = input()\n",
+        "v=0\n",
+        "c=0\n",
+        "for i in range(len(a)):\n",
+        "  if a[i]=='a' or a[i]=='e' or a[i]=='i' or a[i]=='o' or a[i]=='u':\n",
+        "    v+=1\n",
+        "  else:\n",
+        "    c+=1\n",
+        "print(\"vowels\",v)\n",
+        "print(\"consontants\",c)"
+      ],
+      "metadata": {
+        "id": "3doGNSoNO_8t",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ae3ec5ff-db30-4cf8-edce-b40acee5def6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "gitam university\n",
+            "vowels 6\n",
+            "consontants 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#given two integer a and b if a is less than b if a<b print all numbers from a to b in acsending order else print all in descending order \n",
+        "a= int(input(\"enter a :\"))\n",
+        "b= int(input(\"enter b :\"))\n",
+        "if a < b :\n",
+        "  for i in range (a,b+1):\n",
+        "    print(i,end = \" \")\n",
+        "if a > b :\n",
+        "  while a>=b :\n",
+        "    print(a, end = \" \")\n",
+        "    a-=1"
+      ],
+      "metadata": {
+        "id": "Zh0X4i54PN1A"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to count the number of strings where the string lrngenth is 2 or more and the first and last character same from a given list of string\n",
+        "a=input(\"Enter a word \")\n",
+        "if a[0]==a[-1]:\n",
+        "  print(\"Yes\")\n",
+        "else :\n",
+        "  print(\"No\")"
+      ],
+      "metadata": {
+        "id": "n0dx3Y15QEEP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#there is a walking track of 3kms take the input from user nos days , no of round trip he completed for the day calculate the distance he covers in meter if the distance is less than 40000m give a message need to walk more if distance is more than 40000 give a message as done a great job\n",
+        "a=int(input(\"days \"))\n",
+        "b=int(input(\"round trips\"))\n",
+        "c=a*b*6000\n",
+        "if c>= 40000 :\n",
+        "  print(\"Good job\")\n",
+        "else :\n",
+        "  print(\"Need to walk more\")"
+      ],
+      "metadata": {
+        "id": "TSKJCoLzQtZ_",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "691a4306-5f2d-43e1-ec47-1a4f7f74d0af"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "days 3\n",
+            "round trips30\n",
+            "Good job\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#given a list of student of l and a character ,display the names of the students whose first letter is given as input\n",
+        "l = ['harsha','srikar','saicharan','saketh','sohan']\n",
+        "b=str(input(\"enter\"))\n",
+        "c=[]\n",
+        "for i in l:\n",
+        "  if i[0]==b:\n",
+        "    c.append(i)\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "id": "2-iqk9XgRq_A",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "491987b5-514a-4cab-9b5c-ebe29a549242"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enters\n",
+            "['srikar', 'saicharan', 'saketh', 'sohan']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#given list of city names whgose lenght is greater than given length print the city names whose length is greater than given length\n",
+        "a=['vizag','patna','agra','mumbai','delhi','pune','goa']\n",
+        "n=int(input(\"enter\"))\n",
+        "b=[]\n",
+        "for i in a:\n",
+        "  if len(i)>=n:\n",
+        "    b.append(i)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TiceH80hSshP",
+        "outputId": "f3c56303-fdf0-4835-ca5d-a327e20480bb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter4\n",
+            "['vizag', 'patna', 'agra', 'mumbai', 'delhi', 'pune']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
